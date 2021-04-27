@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net4.7.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Scripts">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="ENet-CSharp">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\ENet-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="NewtonSoft.Json">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\NewtonSoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y BPSalaries.dll "D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\Plugins\"</PostBuildEvent>
+  </PropertyGroup>
+
+</Project>
